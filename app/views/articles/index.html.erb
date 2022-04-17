@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Cardinal Gem</h1>
+<div class="container-fluid"><h1>Cardinal Gem</h1></div>
 
 <div id="articles" class="container-fluid">
   <% @articles.each do |article| %>
@@ -12,6 +12,6 @@
 		</div>
 		<br>
   <% end %>
+	<span class="align-middle"><%= link_to "New article", new_article_path %></span>
 </div>
 
-<span class="align-middle"><%= link_to "New article", new_article_path %></span>
