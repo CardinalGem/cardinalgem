@@ -4,11 +4,16 @@
 
 <div id="articles" class="container-fluid">
   <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
+		<div class="card">
+	  	<div class="card-body">
+    		<%= render article %>
+			</div>
+		</div>
+		
+    <button type="button" class="btn btn-primary">
+      <%= button_to "Show this article", article %>
+		</button>
   <% end %>
 </div>
 
-<%= link_to "New article", new_article_path %>
+<%= button_to "New article", new_article_path %>
