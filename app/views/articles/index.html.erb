@@ -10,10 +10,10 @@
 			</div>
 		</div>
 		
-    <button type="button" class="btn btn-primary">
-      <%= button_to "Show this article", article %>
+    <button href = <%= link_to "Show this article", article %> type="button" class="btn btn-primary">
+			Show this article
 		</button>
   <% end %>
 </div>
 
-<%= button_to "New article", new_article_path %>
+<%= link_to "New article", new_article_path %>
