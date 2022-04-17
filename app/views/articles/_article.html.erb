@@ -1,8 +1,9 @@
 <div class="container-fluid" id="<%= dom_id article %>" >
   <p>
-    <h3><%= article.title %></h3>
-  </p>
+    <h3><%= article.title %></h3><span class="badge rounded-pill bg-primary">Created <%= time_tag article.created_at, "data_local": "time-ago" %></span>
 
+	
+  </p>
   <p class="fs-1">
     <%= article.content %>
   </p>

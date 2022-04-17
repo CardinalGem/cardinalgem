@@ -4,8 +4,12 @@ import "controllers"
 import "trix"
 import "@rails/actiontext"
 import * as bootstrap from "bootstrap"  
+import LocalTime from "local-time"
 
-let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))  
-let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {  
-  return new bootstrap.Popover(popoverTriggerEl)  
-})  
+LocalTime.start()
+
+//let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))  
+//let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {  
+//  return new bootstrap.Popover(popoverTriggerEl)  
+//})  
+
