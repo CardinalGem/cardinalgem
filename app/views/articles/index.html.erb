@@ -4,13 +4,13 @@
 
 <div id="articles" class="container-fluid">
   <% @articles.each do |article| %>
-		<div class="card">
+		<div class="card border-danger" style="border-width: 2px;">
 	  	<div class="card-body">
     		<%= render article %>
 			</div>
+			<span class="align-middle"><%= link_to "Show this article", article %></span>
 		</div>
-		<%= link_to "Show this article", article %>
   <% end %>
 </div>
 
-<%= link_to "New article", new_article_path %>
+<span class="align-middle"><%= link_to "New article", new_article_path %></span>
