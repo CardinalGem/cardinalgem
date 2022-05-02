@@ -1,10 +1,16 @@
 <p style="color: green"><%= notice %></p>
+<div class="container-fluid">
+	<%= render @article %>
+</div>
+<br>
+<div class="container-fluid">
+	<%= render "articles/comment", article: @article %>
+</div>
+<br>
 
-<%= render @article %>
-
-<div>
+<div class="container-fluid">
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>
-
+  <br>
   <%= button_to "Destroy this article", @article, method: :delete %>
 </div>

@@ -1,0 +1,5 @@
+<h5>Create comment</h5>
+<%= form_with model: [ article, Comment.new ] do |form| %>
+	<%= form.rich_text_area :content, size: "25x6" %>
+	<%= form.submit %>
+<% end %>

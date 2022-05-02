@@ -3,8 +3,11 @@
     <h3><%= article.title %><h6><span class="badge rounded-pill bg-primary">Created <%= time_tag article.created_at, "data_local": "time-ago" %></span></h6></h3>
   </p>
 	
-  <p class="fs-1">
-    <%= article.content %>
-  </p>
+
+	<div class="card">
+		<div class="card-body">
+    	<%= article.content %>
+		</div>
+	</div>
 
 </div>

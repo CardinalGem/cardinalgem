@@ -1,0 +1,15 @@
+<h5><span class="badge rounded-pill bg-primary"> <%= pluralize article.comments.count, "Comments" %></span></h5>
+
+<div id="comments">
+	<% article.comments.each do |comment| %>
+		<div class="card" style="border-width: 2px; background-color: #f6f3f3; width: 18rem">
+	  	<div class="card-body">
+				<%= render comment %>
+			</div>
+		</div>
+		<br>
+	<% end %>
+</div>
+
+
+<%= render "comments/new", article: article %>
