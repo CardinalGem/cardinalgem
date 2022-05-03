@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
   
   # POST /users/login
-  def login_process
+  def log_in
     @user = User.find params[:user][:name] 
     if @user.password == params[:user][:password]
       give_token
