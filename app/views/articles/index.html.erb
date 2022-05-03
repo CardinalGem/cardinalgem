@@ -1,6 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container-fluid"><h1>Cardinal Gem</h1></div>
+<div class="container-fluid"><h1>Cardinal Gem</h1>
+<div id="users" class="container-fluid">
+	<% if @user and @user.save %>
+		<p align="right">User: <%= @user.name  %></p>
+	<% end %>
+</div>
+</div>
 
 <div id="articles" class="container-fluid">
   <% @articles.each do |article| %>
@@ -14,4 +20,4 @@
   <% end %>
 	<span class="align-middle"><%= link_to "New article", new_article_path %></span>
 </div>
-
+<br>

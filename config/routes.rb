@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #post 'users/create'
+  #post 'users/login'
+  resources :users
   resources :articles do 
     resources :comments
   end

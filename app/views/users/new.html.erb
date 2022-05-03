@@ -1,0 +1,20 @@
+<div class="container-fluid">
+<h3>Create user</h3>
+<%= form_with model: @user do |form| %>
+	<div>
+   	<%= form.label :name, style: "display: block" %>
+   	<%= form.text_field :name %>
+	</div>
+	<div>
+   	<%= form.label :password, style: "display: block" %>
+   	<%= form.text_field :password %>
+	</div>
+	<div>
+   	<%= form.label :password_confirmation, style: "display: block" %>
+   	<%= form.text_field :password_confirmation %>
+	</div>
+	<div>
+	 <%= form.submit %>
+	</div>
+<% end %>
+</div>
