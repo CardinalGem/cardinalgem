@@ -1,9 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="container-fluid"><h1>Cardinal Gem</h1>
-<div id="users" class="container-fluid">
+<div id="users">
 	<% if @user and @user.save %>
 		<p align="right">User: <%= @user.name  %></p>
+		<% else %>
+		<div align="right"><%= link_to "Create user", new_user_path %></div>
 	<% end %>
 </div>
 </div>
